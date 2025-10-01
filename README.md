@@ -1,16 +1,27 @@
 # Multi-Document Research Assistant
 
-A Streamlit application that compares long-context performance across GPT-5, Claude Sonnet 4.5, and DeepSeek v3.2-Exp.
+A Streamlit application that compares long-context performance across GPT-5, Claude Sonnet 4.5, DeepSeek v3.2-Exp, and DeepSeek v3.1-Terminus.
 
 ## Features
 
 - Load multiple PDF documents into a single context
 - Compare responses from different LLM providers
-- Track and visualize metrics:
-  - Token usage (input/output)
-  - API costs
-  - Response times
+- Track and visualize metrics (token usage, API costs, response times)
 - Interactive charts comparing model performance
+
+## Demo
+
+The application provides a clean interface for comparing models side by side.
+
+![Application interface showing document loading sidebar, model selection checkboxes, and question input](app-ui.png)
+
+After running queries, you get detailed metrics and visual comparisons.
+
+![Results showing response panels and metrics table with token counts, costs, and response times](metrics.png)
+
+The comparison charts make it easy to spot cost and performance differences across models.
+
+![Four comparison charts showing cost, response time, token usage, and cost-vs-time tradeoff](charts.png)
 
 ## Setup
 
@@ -73,6 +84,7 @@ multi-document-qa/
 - **GPT-5**: $2.50 input / $10.00 output
 - **Claude Sonnet 4.5**: $3.00 input / $15.00 output
 - **DeepSeek v3.2-Exp**: $0.28 input / $0.42 output
+- **DeepSeek v3.1-Terminus**: $0.55 input / $2.19 output
 
 ## Testing
 
